@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo Vinícius Rosa Sousa | Em Breve</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Inter', sans-serif; 
+        }
+        
+        body {
+            background-color: #030712;
+            /* Efeito de grade sutil de fundo */
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+            background-size: 40px 40px;
+            color: #f3f4f6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+        }
+
+        .container { 
+            max-width: 680px; 
+            width: 100%;
+            padding: 50px 40px;
+            background-color: #0b1329; 
+            border: 1px solid #1e293b;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 18px;
+            background: linear-gradient(135deg, #ffffff 40%, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Container estável para evitar oscilações na página */
+        .typed-container { 
+            font-size: 1.25rem; 
+            font-weight: 600; 
+            margin-bottom: 36px; 
+            min-height: 40px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Estilo fixo e sólido para impedir problemas de renderização */
+        #lista-ferramentas {
+            color: #38bdf8 !important;
+            display: inline-block;
+        }
+
+        p { 
+            color: #9ca3af; 
+            font-size: 1.05rem; 
+            line-height: 1.6;
+            margin-bottom: 40px; 
+            font-weight: 400;
+        }
+
+        .links { 
+            display: flex; 
+            justify-content: center; 
+            gap: 16px; 
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #111827;
+            color: #f3f4f6;
+            padding: 14px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: all 0.25s ease;
+            border: 1px solid #1e293b;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn-wa:hover {
+            background: #25d366;
+            color: #fff;
+            border-color: #25d366;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px rgba(37, 211, 102, 0.25);
+        }
+
+        .btn-ig:hover {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: #fff;
+            border-color: transparent;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px rgba(220, 39, 67, 0.25);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Paulo Vinícius Rosa Sousa</h1> 
+        
+        <div class="typed-container">
+            <span id="lista-ferramentas"></span>
+        </div>
+        
+        <p>Estou desenvolvendo um novo espaço voltado para inteligência de dados, modelagem de dashboards e automação de processos ponta a ponta. Em breve, meu portfólio completo estará disponível aqui.</p>
+        
+        <div class="links">
+            <a href="https://wa.me/5599991594280" target="_blank" class="btn btn-wa">
+                <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> WhatsApp
+            </a>
+            <a href="https://instagram.com/_paulo.sousa" target="_blank" class="btn btn-ig">
+                <i class="fab fa-instagram" style="font-size: 1.2rem;"></i> Instagram
+            </a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var digitadorFerramentas = new Typed('#lista-ferramentas', {
+            strings: [
+                'Especialista em Power BI & Excel', 
+                'Automações com Power Automate & VBA', 
+                'Desenvolvimento com HTML, CSS & Python',
+                'Engenharia & Inteligência de Dados'
+            ],
+            typeSpeed: 60,       /* Velocidade de digitação confortável */
+            backSpeed: 30,       /* Velocidade para apagar */
+            backDelay: 2000,     /* Pausa de 2 segundos antes de começar a apagar */
+            smartBackspace: false, /* CORREÇÃO: Obriga a apagar a frase INTEIRA antes da próxima */
+            fadeOut: false,
+            loop: true
+        });
+    </script>
+</body>
+</html>
